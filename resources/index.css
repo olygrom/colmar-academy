@@ -1,0 +1,306 @@
+:root {
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(70, 70, 70);
+}
+/*html, nav, div, section, article, h2, p {
+    border: 1px solid rgb(251, 227, 89);
+}*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+.mobile {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+
+nav {
+    height: 64px;
+    padding: 8px 24px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 1.75rem;
+}
+#logo span:after {
+    content: "ACADEMY";
+    color: rgb(179, 179, 179);
+}
+#nav-right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+nav a {
+    margin: 8px;
+    padding: 4px;
+}
+nav a:hover {
+    border-radius: 5px;
+    background-color: rgba(91, 119, 241, 0.576);
+}
+
+
+/*-------------------------HEADER----------------------------*/
+header {
+    background-color: lightgray;
+    padding: 32px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: rgb(70, 70, 70);
+}
+header img{
+    max-width: 60%;
+}
+#head-right {
+    padding-left: 24px;
+}
+header button{
+    padding: 10px;
+    color: white;
+    border: none;
+    width: 80%;
+    background-color: rgb(70, 70, 70);
+}
+header button:hover {
+    background-color: rgb(77, 86, 113);
+}
+
+/*-------------------------IT DOESN'T HURT TO KEEP PRACTISIING----------------------------*/
+#keep-practicing{
+display: flex;
+justify-content: center;
+align-items:stretch ;
+overflow: hidden;
+}
+#keep-left {
+    width: 60%;
+    padding: 32px 24px;
+}
+#keep-right {
+    border-left: 1px solid lightgray;
+    width: 40%;
+    padding: 32px 0;
+}
+.stack {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 8px auto;
+}
+.stack:hover, .block:hover, .thesis-stack:hover {
+    background-color: lightgray;
+}
+.stack img {
+    max-width: 30%;
+    height: auto;
+    margin: 16px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.event-name {
+    font-size: 1.3rem;
+    margin: 8px auto;
+}
+.stack p {margin: 8px auto;}
+.stack a {
+    text-decoration: none;
+    color: rgba(91, 119, 241, 0.576);
+}
+.stack a:hover {
+    color: rgb(22, 81, 255);
+    text-decoration: underline;
+}
+
+/*-------------------------START LEARNING----------------------------*/
+#start-learn {
+    padding: 32px 72px;
+    background-color: rgb(236, 236, 236);
+}
+#start-learn h2, #thesis h2 {
+    text-align: center;
+    margin-bottom: 32px
+}
+#courses-flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    overflow: hidden;
+    flex-wrap: wrap; 
+    flex-direction: row; 
+}
+
+.block {
+    width: 30%;
+    margin-bottom: 32px;
+    background-color: white;
+}
+.block img {
+    width: 100%;
+    height: auto
+}
+.course-name {
+    font-size: 1.2rem;
+    padding: 16px auto;
+}
+.block-text {
+    padding: 0px 16px 24px 16px;
+}
+.block h5, .block p {
+    margin: 8px auto;
+}
+
+
+/*-------------------------THESIS----------------------------*/
+#thesis-flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+}
+#thesis-left {
+    width: 60%;
+}
+#thesis-right {
+    width: 40%;
+}
+.thesis-stack {
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    margin: 8px auto;
+}
+.thesis-stack img {
+    max-width: 30%;
+    height: auto;
+    margin: 16px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    border-top: 1px dotted lightgray;
+    font-size: 0.8rem;    
+}
+
+@media (max-width: 480px) {
+    .mobile {display: block;}
+    .desktop {display: none;}
+    :root {font-size: 12px;}
+    h4 {font-size: 1.5rem;}
+
+    nav {
+        padding: 0 4px;
+        justify-content: space-around;
+    }
+    nav a {
+        padding: 3px;
+        margin: 0;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+    header img {
+        max-width: 100%;
+    }
+    #head-right {
+        padding: 16px 16px;
+    }
+    header h1 {
+        margin: 0;
+    }
+    header button {
+        width: 100%;
+    }
+
+    /*keep prac's*/ #keep-right {
+        border: none;
+        width: 100%;
+    }
+    .stack {
+        flex-direction: column;
+        margin-bottom: 24px;
+        padding: 16px 16px 0 16px;
+    }
+    .stack img {
+        max-width: 100%;
+        margin: 0;
+    }
+    .stack-text {
+        width: 100%;
+        padding-left: 16px;
+        padding-bottom: 4px;
+    }
+    .stack-text h4 {
+        margin: 16px auto auto auto;
+    }
+    .stack-text p {
+        font-size: 1.2rem;
+        margin: 8px auto;
+    }
+
+    #start-learn{
+        padding: 0;
+        margin-bottom: 32px;
+        background-color: none;
+    }
+    #start-learn h2, #thesis h2 {
+        margin-bottom: 8px;
+    }
+     #courses-flexbox {
+        flex-wrap: nowrap; 
+        flex-direction: column; 
+    }
+    .block {
+        background-color: lightgray;
+        width: 100%;
+        text-align: left;
+        margin: 4px 8px;
+    }
+    .block-text {
+        padding: 16px;
+    }
+    .course-name {
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+    .block img, .block-text h5, .block-text p {
+        display: none;
+    }
+    #thesis-left {
+        width: 100%;
+    }
+}
